@@ -21,15 +21,58 @@
     </script>
     <style>
         body {
-            font-family: sans-serif;
-            background-color: var(--tg-theme-bg-color, #ffffff);
-            color: var(--tg-theme-text-color, #222222);
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-            color-scheme: var(--tg-color-scheme);
-        }
+            
+            position: relative;
+            width: 375px;
+            height: 812px;
 
+            /* Background */
+            background: #0F1029;
+        }
+        .name {
+            /* Auto layout */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 203px;
+
+            position: absolute;
+            width: 332px;
+            height: 23px;
+            left: 19px;
+            top: 122px;
+
+        }
+        .flex_container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .category {
+            /* Категории */
+
+            width: 84px;
+            height: 23px;
+
+            /* Reduced */
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+
+            /* Grayscale/Placeholder */
+            color: #A0A3BD;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
         a {
             color: var(--tg-theme-link-color, #2678b6);
         }
@@ -182,6 +225,13 @@
 <body>
 
 <section>
+    <div class=""></div>
+    <div class="category">
+        <div class="flex_container">
+            <div>Категории</div>
+            <div>См.все</div>
+        </div>
+    </div>
     <h1 id="greeting"></h1>
 
     <div id="buttons">
