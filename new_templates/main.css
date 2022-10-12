@@ -1,9 +1,10 @@
 .main-container {
-  min-height: 100vh;
-}
-.main-main {
   width: 355px;
   height: 573px;
+}
+.main-main {
+  width: 370px;
+  height: 580px;
   display: flex;
   padding: 0;
   position: relative;
@@ -686,6 +687,7 @@
   position: relative;
   align-items: flex-start;
   border-color: transparent;
+  background-color: var(--dl-color-default-background);
 }
 .frame-corner {
   display: flex;
@@ -865,11 +867,12 @@
 .name-name {
   left: 20px;
   width: 332px;
-  height: 23px;
+  height: 40px;
   display: flex;
   position: relative;
   align-items: center;
   border-color: transparent;
+  background-color: var(--dl-color-default-background);
 }
 .name-text {
   color: var(--dl-color-grayscale-placeholder);
@@ -894,12 +897,13 @@
 }
 .tabbar-tabbar {
   width: 375px;
-  height: 70px;
+  height: 60px;
   display: flex;
   position: relative;
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  background-color: var(--dl-color-default-background);
 }
 .tabbar-container1 {
   top: 0px;
